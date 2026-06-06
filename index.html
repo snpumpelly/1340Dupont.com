@@ -725,13 +725,18 @@ HOW TO ADD PHOTOS (Stuart):
   <div class="si">
     <div class="cform">
       <form
-        action="https://formspree.io/f/meewoalw"
+        action="https://api.web3forms.com/submit"
         method="post"
         onsubmit="return validateForm()"
       >
-        <input type="hidden" name="_subject" value="New Inquiry — 1340 Dupont">
-        <input type="hidden" name="_next" value="https://1340dupont.com">
-        <input type="hidden" name="_cc" value="1340.21st.street.llc@gmail.com">
+        <input type="hidden" name="access_key" value="0ff91f74-a3ec-4e16-b259-8773eac2a711">
+        <input type="hidden" name="subject" value="New Inquiry — 1340 Dupont">
+        <input type="hidden" name="cc" value="1340.21st.street.llc@gmail.com">
+        <input type="hidden" name="redirect" value="https://1340dupont.com">
+        <input type="checkbox" name="botcheck" style="display:none">
+        
+        
+        
         <div class="form-row">
           <div class="form-group">
             <label for="f-name">Full Name *</label>
@@ -739,7 +744,7 @@ HOW TO ADD PHOTOS (Stuart):
           </div>
           <div class="form-group">
             <label for="f-email">Email Address *</label>
-            <input type="email" id="f-email" name="Email" required placeholder="jane@example.com">
+            <input type="email" id="f-email" name="email" required placeholder="jane@example.com">
           </div>
         </div>
         <div class="form-row">
